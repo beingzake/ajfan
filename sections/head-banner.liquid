@@ -1,0 +1,53 @@
+{% schema %}
+{
+  "name": "Head Section",
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background Image"
+      },
+      {
+        "type": "text",
+        "id": "h1_text",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "para_text",
+        "label": "Para"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Head Section"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="container-fluid" style="background-image: url({{ section.settings.bg_img | img_url: "master"}});">
+    <div class="container">
+        <h1>{{ section.settings.h1_text }}</h1>
+        <p>{{ section.settings.para_text }}</p>
+    </div>
+</section>
+
+
+{% stylesheet %}
+
+.container-fluid{
+  background-size: cover;
+  background-position: center;
+}
+
+  
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,34 @@
+.announcement-bar__message{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.announcement-bar__message span{
+    font-weight: 500;
+    color: #DFB760;
+}
+sticky-header{
+    background-position: center;
+}
+sticky-header header{
+  max-width: 1400px;
+}
+.homeBanner .slideshow__autoplay.slider-button,
+.homeBanner .slider-button{
+  display: none !important;
+}
+.header__heading-link{
+  padding: 0px !important;
+}
+.homeBanner .slideshow__text.banner__box{
+  background: none;
+}
+.header__menu-item span{
+  
+}
+.banner__buttons{
+  max-width: 100% !important;
+  justify-content: center;
+}
